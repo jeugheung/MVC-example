@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C9EB118426C1AC2C00F51D4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB118326C1AC2C00F51D4D /* AppDelegate.swift */; };
 		C9EB118626C1AC2C00F51D4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB118526C1AC2C00F51D4D /* SceneDelegate.swift */; };
-		C9EB118826C1AC2C00F51D4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB118726C1AC2C00F51D4D /* ViewController.swift */; };
+		C9EB118826C1AC2C00F51D4D /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB118726C1AC2C00F51D4D /* CommentsViewController.swift */; };
 		C9EB118B26C1AC2C00F51D4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9EB118926C1AC2C00F51D4D /* Main.storyboard */; };
 		C9EB118D26C1AC2E00F51D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EB118C26C1AC2E00F51D4D /* Assets.xcassets */; };
 		C9EB119026C1AC2E00F51D4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9EB118E26C1AC2E00F51D4D /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		C9EB118026C1AC2C00F51D4D /* MVC-architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EB118326C1AC2C00F51D4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9EB118526C1AC2C00F51D4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C9EB118726C1AC2C00F51D4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9EB118726C1AC2C00F51D4D /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		C9EB118A26C1AC2C00F51D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9EB118C26C1AC2E00F51D4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9EB118F26C1AC2E00F51D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,87 @@
 		C9EB118226C1AC2C00F51D4D /* MVC-architecture */ = {
 			isa = PBXGroup;
 			children = (
-				C9EB118326C1AC2C00F51D4D /* AppDelegate.swift */,
-				C9EB118526C1AC2C00F51D4D /* SceneDelegate.swift */,
-				C9EB118726C1AC2C00F51D4D /* ViewController.swift */,
-				C9EB118926C1AC2C00F51D4D /* Main.storyboard */,
-				C9EB118C26C1AC2E00F51D4D /* Assets.xcassets */,
-				C9EB118E26C1AC2E00F51D4D /* LaunchScreen.storyboard */,
-				C9EB119126C1AC2E00F51D4D /* Info.plist */,
+				C9EB119A26C1B37F00F51D4D /* Application */,
+				C9EB119B26C1B3B900F51D4D /* Comments */,
+				C9EB119F26C1B47400F51D4D /* Supporting files */,
 			);
 			path = "MVC-architecture";
+			sourceTree = "<group>";
+		};
+		C9EB119726C1B29A00F51D4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9EB119826C1B2A300F51D4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB118E26C1AC2E00F51D4D /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9EB119926C1B2AA00F51D4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB118526C1AC2C00F51D4D /* SceneDelegate.swift */,
+				C9EB118326C1AC2C00F51D4D /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9EB119A26C1B37F00F51D4D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB119726C1B29A00F51D4D /* Model */,
+				C9EB119826C1B2A300F51D4D /* View */,
+				C9EB119926C1B2AA00F51D4D /* Controller */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C9EB119B26C1B3B900F51D4D /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB119E26C1B3EA00F51D4D /* Model */,
+				C9EB119D26C1B3E200F51D4D /* View */,
+				C9EB119C26C1B3CA00F51D4D /* Controller */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		C9EB119C26C1B3CA00F51D4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB118726C1AC2C00F51D4D /* CommentsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9EB119D26C1B3E200F51D4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB118926C1AC2C00F51D4D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9EB119E26C1B3EA00F51D4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9EB119F26C1B47400F51D4D /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB118C26C1AC2E00F51D4D /* Assets.xcassets */,
+				C9EB119126C1AC2E00F51D4D /* Info.plist */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9EB118826C1AC2C00F51D4D /* ViewController.swift in Sources */,
+				C9EB118826C1AC2C00F51D4D /* CommentsViewController.swift in Sources */,
 				C9EB118426C1AC2C00F51D4D /* AppDelegate.swift in Sources */,
 				C9EB118626C1AC2C00F51D4D /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +360,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NXHNMN6U6U;
-				INFOPLIST_FILE = "MVC-architecture/Info.plist";
+				INFOPLIST_FILE = "";
+				"INFOPLIST_FILE[sdk=*]" = "MVC-architecture/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +380,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NXHNMN6U6U;
-				INFOPLIST_FILE = "MVC-architecture/Info.plist";
+				INFOPLIST_FILE = "";
+				"INFOPLIST_FILE[sdk=*]" = "MVC-architecture/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
