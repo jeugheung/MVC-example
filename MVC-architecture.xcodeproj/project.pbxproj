@@ -12,10 +12,11 @@
 		C9B915EB26E2B979006D8F92 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B915EA26E2B979006D8F92 /* NetworkService.swift */; };
 		C9B915EE26E2BB61006D8F92 /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B915ED26E2BB61006D8F92 /* CommentNetworkService.swift */; };
 		C9B915F026E2BC05006D8F92 /* GetResponseComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B915EF26E2BC05006D8F92 /* GetResponseComment.swift */; };
+		C9B915F226E2BD11006D8F92 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B915F126E2BD11006D8F92 /* NetworkError.swift */; };
 		C9EB118426C1AC2C00F51D4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB118326C1AC2C00F51D4D /* AppDelegate.swift */; };
 		C9EB118626C1AC2C00F51D4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB118526C1AC2C00F51D4D /* SceneDelegate.swift */; };
 		C9EB118826C1AC2C00F51D4D /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB118726C1AC2C00F51D4D /* CommentsViewController.swift */; };
-		C9EB118B26C1AC2C00F51D4D /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9EB118926C1AC2C00F51D4D /* Comments.storyboard */; };
+		C9EB118B26C1AC2C00F51D4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9EB118926C1AC2C00F51D4D /* Main.storyboard */; };
 		C9EB118D26C1AC2E00F51D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EB118C26C1AC2E00F51D4D /* Assets.xcassets */; };
 		C9EB119026C1AC2E00F51D4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9EB118E26C1AC2E00F51D4D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -26,11 +27,12 @@
 		C9B915EA26E2B979006D8F92 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C9B915ED26E2BB61006D8F92 /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
 		C9B915EF26E2BC05006D8F92 /* GetResponseComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetResponseComment.swift; sourceTree = "<group>"; };
+		C9B915F126E2BD11006D8F92 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		C9EB118026C1AC2C00F51D4D /* MVC-architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EB118326C1AC2C00F51D4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9EB118526C1AC2C00F51D4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C9EB118726C1AC2C00F51D4D /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
-		C9EB118A26C1AC2C00F51D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Comments.storyboard; sourceTree = "<group>"; };
+		C9EB118A26C1AC2C00F51D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9EB118C26C1AC2E00F51D4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9EB118F26C1AC2E00F51D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9EB119126C1AC2E00F51D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		C9EB119726C1B29A00F51D4D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C9B915F126E2BD11006D8F92 /* NetworkError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,7 +149,7 @@
 		C9EB119D26C1B3E200F51D4D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C9EB118926C1AC2C00F51D4D /* Comments.storyboard */,
+				C9EB118926C1AC2C00F51D4D /* Main.storyboard */,
 				C9B915E526E2B471006D8F92 /* CommentCell.swift */,
 			);
 			path = View;
@@ -229,7 +232,7 @@
 			files = (
 				C9EB119026C1AC2E00F51D4D /* LaunchScreen.storyboard in Resources */,
 				C9EB118D26C1AC2E00F51D4D /* Assets.xcassets in Resources */,
-				C9EB118B26C1AC2C00F51D4D /* Comments.storyboard in Resources */,
+				C9EB118B26C1AC2C00F51D4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +249,7 @@
 				C9EB118626C1AC2C00F51D4D /* SceneDelegate.swift in Sources */,
 				C9B915EB26E2B979006D8F92 /* NetworkService.swift in Sources */,
 				C9B915F026E2BC05006D8F92 /* GetResponseComment.swift in Sources */,
+				C9B915F226E2BD11006D8F92 /* NetworkError.swift in Sources */,
 				C9B915E626E2B471006D8F92 /* CommentCell.swift in Sources */,
 				C9B915EE26E2BB61006D8F92 /* CommentNetworkService.swift in Sources */,
 			);
@@ -254,12 +258,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C9EB118926C1AC2C00F51D4D /* Comments.storyboard */ = {
+		C9EB118926C1AC2C00F51D4D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C9EB118A26C1AC2C00F51D4D /* Base */,
 			);
-			name = Comments.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		C9EB118E26C1AC2E00F51D4D /* LaunchScreen.storyboard */ = {
